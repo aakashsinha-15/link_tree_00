@@ -1,0 +1,337 @@
+/* 
+.appearance-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 220px;
+    background: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .sidebar h2 {
+    color: #333;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .sidebar ul .active {
+    font-weight: bold;
+    color: #4caf50;
+  }
+  
+  .user {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .appearance-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .phone-preview {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .phone {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    width: 200px;
+    height: 300px;
+  }
+  
+  .layout-options button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .btn {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn.solid {
+    background: #4caf50;
+    color: white;
+  }
+  
+  .btn.outline {
+    border: 2px solid #4caf50;
+    background: none;
+    color: #4caf50;
+  }
+  
+  .btn.rounded {
+    background: #4caf50;
+    color: white;
+    border-radius: 20px;
+  }
+  
+  .theme-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .theme-btn.light {
+    background: #f4f4f4;
+  }
+  
+  .theme-btn.dark {
+    background: #333;
+    color: white;
+  }
+  
+  .theme-btn.blue {
+    background: #007bff;
+    color: white;
+  }
+  
+  .save-btn {
+    padding: 10px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+   */
+
+
+/* General Styles */
+.appearance-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Phone Container */
+  .phone-container {
+    width: 28vw;
+    background: #f4f4f4;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 66vh;
+    border: 10px solid black;
+    overflow: hidden; /* Prevents overflow */
+  }
+  
+  /* Themes */
+  .phone-container.light {
+    background: #f9f9f9;
+    color: #000;
+  }
+  
+  .phone-container.dark {
+    background: #222;
+    color: #fff;
+  }
+  
+  .phone-container.blue {
+    background: #1e3a8a;
+    color: #fff;
+  }
+  
+  /* Profile Section */
+  .profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  .username {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /* Button Styles */
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .toggle-btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .toggle-btn.active {
+    background: #007bff;
+    color: white;
+  }
+  
+  /* Link Section Layouts */
+  .links-section {
+    margin-top: 15px;
+  }
+  
+  .links-section.stack .link-item {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .links-section.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .links-section.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .link-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  /* Button Styling */
+  .connect-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Different Button Styles */
+  .connect-btn.solid {
+    background: #007bff;
+    color: white;
+  }
+  
+  .connect-btn.outline {
+    border: 2px solid #007bff;
+    color: #007bff;
+    background: transparent;
+  }
+  
+  .connect-btn.rounded {
+    border-radius: 20px;
+    background: #007bff;
+    color: white;
+  }
+  
+  /* Options Styling */
+  .appearance-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .option {
+    background: rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .option h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .layout-options,
+  .button-options,
+  .theme-options {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Theme Buttons */
+  .theme-btn {
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .theme-btn.light {
+    background: #f9f9f9;
+    color: #000;
+    border: 1px solid #ccc;
+  }
+  
+  .theme-btn.dark {
+    background: #222;
+    color: white;
+  }
+  
+  .theme-btn.blue {
+    background: #1e3a8a;
+    color: white;
+  }
+  
+  /* Save Button */
+  .save-btn {
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    background: #28a745;
+    color: white;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .save-btn:hover {
+    background: #218838;
+  }
+  
