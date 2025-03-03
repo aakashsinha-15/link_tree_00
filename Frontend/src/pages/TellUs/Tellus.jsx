@@ -43,7 +43,7 @@ function Tellus() {
                     <input type="text" id="username" name="username" placeholder="Tell us your username" />
 
                     <div className="category-selection">
-                        <p>Select one category that best describes your Linktree:</p>
+                        <h3>Select one category that best describes your Linktree:</h3>
                         <div className="grid-container">
                             {categories.map((category) => (
                                 <div
