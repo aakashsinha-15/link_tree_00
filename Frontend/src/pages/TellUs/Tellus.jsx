@@ -65,7 +65,7 @@ function Tellus() {
                         </div>
                     </div>
 
-                    <button type="submit" disabled={!selectedCategory}>Continue</button>
+                    <button type="submit" disabled={!selectedCategory} className="buttttton">Continue</button>
                 </form>
             </div>
             <div className="imaggee-container"> 

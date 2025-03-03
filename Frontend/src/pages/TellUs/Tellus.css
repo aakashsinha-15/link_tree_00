@@ -114,7 +114,7 @@
 }
 
 /* Submit Button */
-button {
+.buttttton {
     width: 100%;
     height : 40%;
     padding: 10px;
@@ -128,7 +128,7 @@ button {
     transition: 0.3s;
 }
 
-button:disabled {
+.buttttton:disabled {
     background-color: #ccc;
     cursor: not-allowed;
 }
