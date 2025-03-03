@@ -12,32 +12,57 @@
 }
 
 .logo-container{
-    width : 20%;
+    width : 10%;
     height : 100%;
     display : flex;
     position: relative;
     bottom : 45%;
-    right : 3%;
+    left : 1%;
 }
 
-.image-container img {
-    width: 350px;
-    height: auto;
+.imaggee-container{
+    width : 40%;
+    height : 100%;
+}
+
+.imaggee-container img {
+    width : 100%;
+    height : 100%;
+
+    /* width: 350px;
+    height: auto; */
     border-radius: 10px;
 }
 
 /* Form Styling */
-.form-container {
+.forrm-container {
     /* max-width: 500px; */
-    width : 40%;
+    width : 50%;
     height : 80%;
     display: flex;
     flex-direction : column;
     align-items: start;
     justify-content: space-between;
     position: relative;
-    top : 20%;
+    top : 15%;
     /* text-align: center; */
+}
+
+.forrm-container h1{
+    font-size : 45px;
+    font-weight: 750;
+    margin-bottom : 0;
+}
+
+.pers-info{
+    margin-top : 0;
+    position: relative;
+    bottom : 4%;
+}
+
+.forrms{
+    position : relative;
+    bottom : 4.5%;
 }
 
 .category-selection {
@@ -46,6 +71,7 @@
 
 /* Grid for Categories */
 .grid-container {
+    width : 40vw;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;

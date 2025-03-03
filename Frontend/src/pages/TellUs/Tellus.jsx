@@ -34,11 +34,11 @@ function Tellus() {
                 <img src={logo}/>
             </div>
 
-            <div className="form-container">
+            <div className="forrm-container">
                 <h1>Tell us about yourself</h1>
-                <p>For a personalized Spark experience</p>
+                <p className="pers-info">For a personalized Spark experience</p>
 
-                <form action='submit' onSubmit={submitHandler}>
+                <form action='submit' onSubmit={submitHandler} className='forrms'>
                     <label htmlFor="username"></label>
                     <input type="text" id="username" name="username" placeholder="Tell us your username" />
 
@@ -68,7 +68,7 @@ function Tellus() {
                     <button type="submit" disabled={!selectedCategory}>Continue</button>
                 </form>
             </div>
-            <div className="image-container">
+            <div className="imaggee-container"> 
                 <img src={SparkImage} alt="Spark" />
             </div>
         </div>
