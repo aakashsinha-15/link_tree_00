@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Tellus.css';
 import SparkImage from '../../assets/Frame.jpg';
 import {useNavigate} from 'react-router-dom'
+import logo from '../../assets/logo.png'
 
 function Tellus() {
     const [selectedCategory, setSelectedCategory] = useState('');
@@ -29,15 +30,17 @@ function Tellus() {
 
     return (
         <div className="tellus-container">
+            <div className="logo-container">
+                <img src={logo}/>
+            </div>
 
             <div className="form-container">
-                <h1>SPARK</h1>
-                <p>Tell us about yourself</p>
+                <h1>Tell us about yourself</h1>
                 <p>For a personalized Spark experience</p>
 
                 <form action='submit' onSubmit={submitHandler}>
-                    <label htmlFor="username">Tell us your username</label>
-                    <input type="text" id="username" name="username" placeholder="Enter your username" />
+                    <label htmlFor="username"></label>
+                    <input type="text" id="username" name="username" placeholder="Tell us your username" />
 
                     <div className="category-selection">
                         <p>Select one category that best describes your Linktree:</p>
