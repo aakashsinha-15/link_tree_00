@@ -21,6 +21,7 @@ function Links() {
             setShowLinks(false);
         }
     };
+    // const url = "http://localhost:5000/api/v2/link";
     const url = "https://link-tree-backend-2.onrender.com/api/v2/link";
     const token = localStorage.getItem("accessToken");
     const fetchLinks = async () => {

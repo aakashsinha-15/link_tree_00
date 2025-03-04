@@ -18,6 +18,9 @@ const Analytics = () => {
 
     const fetchAnalytics = async () => {
         try {
+            // const response = await axios.get("http://localhost:5000/api/v2/link/analytics", {
+            //     headers: { Authorization: `Bearer ${token}` },
+            // });
             const response = await axios.get("https://link-tree-backend-2.onrender.com/api/v2/link/analytics", {
                 headers: { Authorization: `Bearer ${token}` },
             });

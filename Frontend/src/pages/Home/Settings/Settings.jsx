@@ -17,6 +17,11 @@ function Settings() {
     const getUserDetails = async () => {
         useEffect(() => {
             try {
+                // const response = axios.get('http://localhost:5000/api/v2/user/user-details', {
+                //     headers: {
+                //         Authorization: `Bearer ${token}`
+                //     }
+                // })
                 const response = axios.get('https://link-tree-backend-2.onrender.com/api/v2/user/user-details', {
                     headers: {
                         Authorization: `Bearer ${token}`

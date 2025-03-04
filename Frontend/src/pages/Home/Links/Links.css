@@ -316,3 +316,13 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+@media all and (min-width : 300px) and (max-width : 800px){
+    .link-conatiner{
+        width : 100vw;
+        height : 100vh;
+    }
+    .phone-container{
+        display: none;
+    }
+}
