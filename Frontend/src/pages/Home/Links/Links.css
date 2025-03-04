@@ -1,6 +1,8 @@
 /* Phone Container */
 
 .link-container {
+    /* width : 120vw; */
+    height : 130vh;
     display: flex;
     justify-content: space-evenly;
     /* padding-bottom: 10px; */
