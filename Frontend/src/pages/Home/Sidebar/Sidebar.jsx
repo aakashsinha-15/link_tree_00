@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 function Sidebar({ username }) {
     const [isHover, setIsHover] = useState(false)
     // const url = 'http://localhost:5000/api/v2/user/logoutUser'
-    const url = 'https://link-tree-backend-2.onrender.com/api/v2/user/logoutUser'
+    const url = 'https://link-tree-backend-222.onrender.com/api/v2/user/logoutUser'
 
     const handleLogout = async () => {
         try {

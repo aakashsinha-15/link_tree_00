@@ -4,7 +4,7 @@ import "./AddLink.css";
 
 function AddLink() {
     // const url = "http://localhost:5000/api/v2/link";
-    const url = "https://link-tree-backend-2.onrender.com/api/v2/link";
+    const url = "https://link-tree-backend-222.onrender.com/api/v2/link";
     const [links, setLinks] = useState([]);
     const [link, setLink] = useState({ label: "", link: "" });
     const [activeTab, setActiveTab] = useState("addLink");

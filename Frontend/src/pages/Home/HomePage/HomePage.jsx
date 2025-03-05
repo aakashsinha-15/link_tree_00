@@ -22,7 +22,7 @@ const  HomePage = () => {
                 //         Authorization: `Bearer ${token}`
                 //     }
                 // });
-                const response = await axios.get('https://link-tree-backend-2.onrender.com/api/v2/user/user-details', {
+                const response = await axios.get('https://link-tree-backend-222.onrender.com/api/v2/user/user-details', {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }

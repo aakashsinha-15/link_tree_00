@@ -22,7 +22,7 @@ function Settings() {
                 //         Authorization: `Bearer ${token}`
                 //     }
                 // })
-                const response = axios.get('https://link-tree-backend-2.onrender.com/api/v2/user/user-details', {
+                const response = axios.get('https://link-tree-backend-222.onrender.com/api/v2/user/user-details', {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }
@@ -63,7 +63,7 @@ function Settings() {
             //     }
             // });
 
-            const response = await axios.patch('https://link-tree-backend-2.onrender.com/api/v2/user/edit-profile', formData, {
+            const response = await axios.patch('https://link-tree-backend-222.onrender.com/api/v2/user/edit-profile', formData, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                     "Content-Type": "application/json"

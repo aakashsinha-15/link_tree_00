@@ -16,7 +16,7 @@ const Register = () => {
   });
 
   // const url = 'http://localhost:5000/api/v2/user/register';
-  const url = "https://link-tree-backend-2.onrender.com/api/v2/user/register"
+  const url = "https://link-tree-backend-222.onrender.com/api/v2/user/register"
   const navigate = useNavigate()
 
   const handleChange = (e) => {
