@@ -56,7 +56,14 @@ function Settings() {
         e.preventDefault();
         console.log(token)
         try {
-            const response = await axios.patch('http://localhost:5000/api/v2/user/edit-profile', formData, {
+            // const response = await axios.patch('http://localhost:5000/api/v2/user/edit-profile', formData, {
+            //     headers: {
+            //         Authorization: `Bearer ${token}`,
+            //         "Content-Type": "application/json"
+            //     }
+            // });
+
+            const response = await axios.patch('https://link-tree-backend-2.onrender.com/api/v2/user/edit-profile', formData, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                     "Content-Type": "application/json"
