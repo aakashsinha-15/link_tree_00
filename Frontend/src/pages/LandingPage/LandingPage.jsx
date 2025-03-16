@@ -71,7 +71,9 @@ const LandingPage = () => {
             <p>
               Help your followers discover everything you’re sharing all over the internet, in one simple place. They’ll thank you for it!
             </p>
-            <button className="btn secondary-btn">Get your free spark</button>
+            <Link to="/register">
+              <button className="btn secondary-btn">Get your free spark</button>
+            </Link>
           </div>
           <img src={Analytics} alt="Dashboard" className="hero-img" />
         </div>
